@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .login {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    .register {
+      background-color: #2ecc71;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Notes App</h1>
+    <button class="login"><a href="{% url 'login' %}">Login</a></button>
+    <button class="register"><a href="{% url 'register' %}">Register</a></button>
+  </div>
+</body>
+</html>

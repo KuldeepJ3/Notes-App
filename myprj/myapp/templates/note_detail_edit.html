@@ -1,0 +1,7 @@
+{% if request.user.is_authenticated %}
+<form action="{% url 'note_detail_edit' note.pk %}" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Edit Note</button>
+</form>
+{% endif %}
